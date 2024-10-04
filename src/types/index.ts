@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import { IImage } from "@/lib/database/models/image.model";
 
 declare global {
