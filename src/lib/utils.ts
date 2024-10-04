@@ -1,3 +1,5 @@
+/* eslint-disable prefer-const */
+/* eslint-disable no-prototype-builtins */
 import { type ClassValue, clsx } from "clsx";
 import qs from "qs"
 import { twMerge } from "tailwind-merge";
@@ -134,9 +136,9 @@ export const deepMergeObjects = (obj1: any, obj2: any) => {
     return obj1;
   }
 
-  let output = { ...obj2 };
+  const output = { ...obj2 };
 
-  for (let key in obj1) {
+  for (const key in obj1) {
     if (obj1.hasOwnProperty(key)) {
       if (
         obj1[key] &&
